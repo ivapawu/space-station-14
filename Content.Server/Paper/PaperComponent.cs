@@ -11,7 +11,7 @@ public sealed partial class PaperComponent : SharedPaperComponent
     public string Content { get; set; } = "";
 
     [DataField("contentSize")]
-    public int ContentSize { get; set; } = 6000;
+    public int ContentSize { get; set; } = 10000;
 
     [DataField("stampedBy")]
     public List<StampDisplayInfo> StampedBy { get; set; } = new();

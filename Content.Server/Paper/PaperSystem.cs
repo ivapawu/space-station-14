@@ -149,7 +149,7 @@ namespace Content.Server.Paper
         {
             if (args.Text.Length <= paperComp.ContentSize)
             {
-                paperComp.Content = args.Text;
+                paperComp.Content = paperComp.Content + args.Text;
 
                 if (TryComp<AppearanceComponent>(uid, out var appearance))
                     _appearance.SetData(uid, PaperVisuals.Status, PaperStatus.Written, appearance);
